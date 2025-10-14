@@ -23,7 +23,7 @@ import (
 	"github.com/schollz/progressbar/v3"
 )
 
-const VERSION = "v1.1.0"
+const VERSION = "v1.0.0"
 const tmpDir = "tmp"
 
 var (

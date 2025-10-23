@@ -602,10 +602,6 @@ func main() {
 		showVersion bool
 		debug       bool
 	)
-	// 设置环境变量
-	os.Setenv("http_proxy", "http://127.0.0.1:7890")
-	os.Setenv("https_proxy", "http://127.0.0.1:7890")
-
 	flag.StringVar(&image, "i", "", "Docker 镜像名称（例如：nginx:latest 或 harbor.abc.com/abc/nginx:1.26.0）")
 	flag.BoolVar(&quiet, "q", false, "静默模式，减少交互")
 	flag.StringVar(&customReg, "r", "", "自定义仓库地址（例如：harbor.abc.com）")
